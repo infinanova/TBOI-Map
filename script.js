@@ -1,10 +1,3 @@
-/* TODO
-Ability to indicate if walls are blocked, and what direction
-- possible secret room finding algorithm?
-
-
-*/
-
 // Setting up functions and variables
 var worldMap = []; // Currently unused
 function init() { //Initializing world map

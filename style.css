@@ -83,11 +83,6 @@ main {
     background-color:darkblue;
 }
 
-/*
-curse room
-
-*/
-
 /* Rounded Corners */
 .cell.row0.col0, .cell-container.row0.col0 {
     border-top-left-radius: 1em;
