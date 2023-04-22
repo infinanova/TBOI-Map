@@ -6,7 +6,8 @@
         <link rel="stylesheet" href="style.css" media="screen">
     </head>
     <body>
-        <main>
+        <main class="whole-screen">
+            <div class="settings-button" onclick="openSettings();"><div>settings placeholder settings placeholder settings placeholder</div></div>
             <div id="map-container"></div>
             <div id="controls">
                 <h1>Controls</h1>
@@ -43,6 +44,12 @@
                 </table>
             </div>
         </main>
+        <div id="settings-overlay" class="whole-screen">
+            <div id="settings-pane">
+                <div class="settings-button" onclick="closeSettings();"><p>X</p></div>
+                <h1>Settings</h1>
+            </div>
+        </div>
         <script>init();</script>
     </body>
 </html>

@@ -73,6 +73,17 @@ function setColor(arr, color){
     cell.classList.add(color);
 }
 
+// Window functions
+function openSettings(){
+    document.getElementById("settings-overlay").style.display = "flex";
+}
+
+function closeSettings(){
+    document.getElementById("settings-overlay").style.display = "none";
+}
+
+
+
 
 // Key listener
 document.addEventListener("keydown", (e) => {
@@ -91,6 +102,7 @@ document.addEventListener("keydown", (e) => {
         case "s": setColor(cursorPos, "color-shop"); break;
         case "b": setColor(cursorPos, "color-boss"); break;
         case "h": setColor(cursorPos, "color-secret"); break;
+        case "Escape": closeSettings(); break;
 
     }
 });
