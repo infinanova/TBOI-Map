@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TBOI MapMaker</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css" media="screen">
+    </head>
+    <body>
+        <main>
+            <div id="map-container"></div>
+            <div id="controls">
+                <h1>Controls</h1>
+                <ul>
+                    <li>Arrow keys to move cursor</li>
+                    <li>Space to toggle cell (unexplored -> exists -> explored)</li>
+                    <li>t to mark treasure room</li>
+                    <li>s to mark shop</li>
+                    <li>b to mark boss</li>
+                    <li>h to mark secret room</li>
+                    <li>x to clear marks</li>
+                </ul>
+                <table>
+                    <tr>
+                        <td><div class="key unexplored color-base"></div><div class="key exists color-base"></div><div class="key explored color-base"></div></td>
+                        <td>Base</td>
+                    </tr>
+                    <tr>
+                        <td><div class="key unexplored color-treasure"></div><div class="key exists color-treasure"></div><div class="key explored color-treasure"></div></td>
+                        <td>Treasure Room</td>
+                    </tr>
+                    <tr>
+                        <td><div class="key unexplored color-shop"></div><div class="key exists color-shop"></div><div class="key explored color-shop"></div></td>
+                        <td>Shop</td>
+                    </tr>
+                    <tr>
+                        <td><div class="key unexplored color-boss"></div><div class="key exists color-boss"></div><div class="key explored color-boss"></div></td>
+                        <td>Boss</td>
+                    </tr>
+                    <tr>
+                        <td><div class="key unexplored color-secret"></div><div class="key exists color-secret"></div><div class="key explored color-secret"></div></td>
+                        <td>Secret</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <script>init();</script>
+    </body>
+</html>
